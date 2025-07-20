@@ -4,11 +4,10 @@
 - 🌱 I’m currently learning **Web Development and Ai technologies.**
 
 - 📫 How to reach me via Mail:-**yaswanthvarmamalaraju@gmail.com**
-- 📫 How to reach me via LinkedIn :-**https://www.linkedin.com/in/yaswanthvarma-malaraju?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/malaraju yaswanth varma" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="malaraju yaswanth varma" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/yaswanthvarma-malaraju?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android app" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="malaraju yaswanth varma" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
