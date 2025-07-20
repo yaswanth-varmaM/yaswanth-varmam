@@ -3,8 +3,8 @@
 
 - 🌱 I’m currently learning **Web Development and Ai technologies.**
 
-- 📫 How to reach me via mail:-**yaswanthvarmamalaraju@gmail.com**
-- 📫 How to reach me via mail:-**https://www.linkedin.com/in/yaswanthvarma-malaraju?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app**
+- 📫 How to reach me via Mail:-**yaswanthvarmamalaraju@gmail.com**
+- 📫 How to reach me via LinkedIn :-**https://www.linkedin.com/in/yaswanthvarma-malaraju?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
