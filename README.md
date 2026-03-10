@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Yaswanth varma</h1>
-<h3 align="center">A passionate frontend developer and AI enthusiast</h3>
+<h3 align="center">A passionate software developer and AI enthusiast</h3>
 
 - 🌱 I’m currently learning and evolving**Web Development and Ai technologies.**
 
