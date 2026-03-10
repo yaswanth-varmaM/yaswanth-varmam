@@ -1,9 +1,11 @@
 <h1 align="center">Hi 👋, I'm Yaswanth varma</h1>
 <h3 align="center">A passionate frontend developer and AI enthusiast</h3>
 
-- 🌱 I’m currently learning **Web Development and Ai technologies.**
+- 🌱 I’m currently learning and evolving**Web Development and Ai technologies.**
 
-- 📫 How to reach me via Mail:-**yaswanthvarmamalaraju@gmail.com**
+- 📫📧 How to reach me via Mail:-**yaswanthvarmamalaraju@gmail.com**
+
+- 💼🌐👤To know me please visit my portfolio:-**https://yaswanthvarmaportfolio.netlify.app/**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
