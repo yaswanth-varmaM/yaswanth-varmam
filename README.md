@@ -58,13 +58,8 @@
 # 🐍 Contribution Snake
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/snake.svg?v=1">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/snake.svg?v=1">
-    <img src="./workflows/github-snake.yml?v=1" alt="GitHub Contribution Snake">
-  </picture>
+  <img src="./assets/snake.svg?v=1" alt="Contribution Snake" width="100%">
 </p>
-
 ---
 
 #  Connect With Me
