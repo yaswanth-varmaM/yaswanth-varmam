@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220">
+  <defs>
+    <linearGradient id="rankGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="repoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="followerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1abc9c;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#16a085;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="contribGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="cardGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="400" height="220" rx="12" fill="#1a1a2e" filter="url(#cardGlow)"/>
+  <text x="200" y="35" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="18" font-weight="bold">GitHub Profile Statistics</text>
+  
+  <!-- Rank Ring (S+) -->
+  <g transform="translate(70, 110)">
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#2d2d44" stroke-width="8"/>
+    <circle cx="0" cy="0" r="50" fill="none" stroke="url(#rankGradient)" stroke-width="8" stroke-dasharray="314" stroke-dashoffset="314">
+      <animate attributeName="stroke-dashoffset" from="314" to="0" dur="2s" begin="0.5s" fill="freeze"/>
+    </circle>
+    <text x="0" y="-5" text-anchor="middle" fill="#FFD700" font-family="Arial" font-size="32" font-weight="bold" opacity="0">
+      S+
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.5s" fill="freeze"/>
+    </text>
+    <text x="0" y="20" text-anchor="middle" fill="#B0B0B0" font-family="Arial" font-size="10">Rank</text>
+  </g>
+  
+  <!-- Repositories -->
+  <g transform="translate(200, 80)">
+    <rect x="-40" y="-30" width="80" height="60" rx="8" fill="#2d2d44" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.3s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0,-20; 0,0" dur="0.5s" begin="0.3s" fill="freeze"/>
+    </rect>
+    <text x="0" y="-5" text-anchor="middle" fill="#3498db" font-family="Arial" font-size="28" font-weight="bold" opacity="0">
+      15
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.8s" fill="freeze"/>
+    </text>
+    <text x="0" y="15" text-anchor="middle" fill="#B0B0B0" font-family="Arial" font-size="10" opacity="0">
+      Repositories
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1s" fill="freeze"/>
+    </text>
+  </g>
+  
+  <!-- Followers -->
+  <g transform="translate(330, 80)">
+    <rect x="-40" y="-30" width="80" height="60" rx="8" fill="#2d2d44" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.2s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0,-20; 0,0" dur="0.5s" begin="1.2s" fill="freeze"/>
+    </rect>
+    <text x="0" y="-5" text-anchor="middle" fill="#1abc9c" font-family="Arial" font-size="28" font-weight="bold" opacity="0">
+      250
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.7s" fill="freeze"/>
+    </text>
+    <text x="0" y="15" text-anchor="middle" fill="#B0B0B0" font-family="Arial" font-size="10" opacity="0">
+      Followers
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.9s" fill="freeze"/>
+    </text>
+  </g>
+  
+  <!-- Following -->
+  <g transform="translate(135, 170)">
+    <rect x="-35" y="-25" width="70" height="50" rx="8" fill="#2d2d44" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.2s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0,-20; 0,0" dur="0.5s" begin="2.2s" fill="freeze"/>
+    </rect>
+    <text x="0" y="-5" text-anchor="middle" fill="#9b59b6" font-family="Arial" font-size="24" font-weight="bold" opacity="0">
+      50
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.7s" fill="freeze"/>
+    </text>
+    <text x="0" y="15" text-anchor="middle" fill="#B0B0B0" font-family="Arial" font-size="10" opacity="0">
+      Following
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.9s" fill="freeze"/>
+    </text>
+  </g>
+  
+  <!-- Contributions -->
+  <g transform="translate(265, 170)">
+    <rect x="-35" y="-25" width="70" height="50" rx="8" fill="#2d2d44" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.2s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0,-20; 0,0" dur="0.5s" begin="3.2s" fill="freeze"/>
+    </rect>
+    <text x="0" y="-5" text-anchor="middle" fill="#e74c3c" font-family="Arial" font-size="24" font-weight="bold" opacity="0">
+      1.2k
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.7s" fill="freeze"/>
+    </text>
+    <text x="0" y="15" text-anchor="middle" fill="#B0B0B0" font-family="Arial" font-size="10" opacity="0">
+      Contributions
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.9s" fill="freeze"/>
+    </text>
+  </g>
+</svg>
