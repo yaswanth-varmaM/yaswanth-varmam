@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffaa00;stop-opacity:1"/>
+    </linearGradient>
+    
+    <filter id="trophyGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="600" height="200" fill="transparent"/>
+  
+  <!-- Trophy 1 -->
+  <g transform="translate(100, 100)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.5s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="scale" values="0;1" dur="0.5s" begin="0.5s" fill="freeze"/>
+    <path d="M-30,-40 L30,-40 L20,30 L-20,30 Z" fill="url(#goldGradient)" filter="url(#trophyGlow)"/>
+    <rect x="-25" y="30" width="50" height="10" fill="#ffaa00"/>
+    <rect x="-15" y="40" width="30" height="8" fill="#cc8800"/>
+    <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffd700">Streak</text>
+    <text x="0" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">30 Days</text>
+    
+    <!-- Shine sweep -->
+    <path d="M-30,-40 L30,-40 L20,30 L-20,30 Z" fill="url(#goldGradient)" opacity="0">
+      <animate attributeName="opacity" values="0;0.5;0" dur="3s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="-30;60" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Trophy 2 -->
+  <g transform="translate(300, 100)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="scale" values="0;1" dur="0.5s" begin="1s" fill="freeze"/>
+    <path d="M-30,-40 L30,-40 L20,30 L-20,30 Z" fill="url(#goldGradient)" filter="url(#trophyGlow)"/>
+    <rect x="-25" y="30" width="50" height="10" fill="#ffaa00"/>
+    <rect x="-15" y="40" width="30" height="8" fill="#cc8800"/>
+    <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffd700">Contributor</text>
+    <text x="0" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">500+ Commits</text>
+  </g>
+  
+  <!-- Trophy 3 -->
+  <g transform="translate(500, 100)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.5s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="scale" values="0;1" dur="0.5s" begin="1.5s" fill="freeze"/>
+    <path d="M-30,-40 L30,-40 L20,30 L-20,30 Z" fill="url(#goldGradient)" filter="url(#trophyGlow)"/>
+    <rect x="-25" y="30" width="50" height="10" fill="#ffaa00"/>
+    <rect x="-15" y="40" width="30" height="8" fill="#cc8800"/>
+    <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffd700">Problem Solver</text>
+    <text x="0" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">15+ Projects</text>
+  </g>
+</svg>
