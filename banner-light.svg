@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 740" width="1280" height="740">
+  <defs>
+    <linearGradient id="nameGradientLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c44569;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#f368e0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#a18cd1;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="bgGradientLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#e9ecef;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#dee2e6;stop-opacity:1"/>
+    </linearGradient>
+    
+    <filter id="glowLight">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="1280" height="740" fill="url(#bgGradientLight)"/>
+  
+  <rect x="50" y="50" width="1180" height="640" fill="#ffffff" rx="10" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.95;0.9" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  
+  <rect x="50" y="50" width="1180" height="40" fill="#f1f3f4" rx="10" ry="10"/>
+  <circle cx="75" cy="70" r="6" fill="#ff5f56"/>
+  <circle cx="95" cy="70" r="6" fill="#ffbd2e"/>
+  <circle cx="115" cy="70" r="6" fill="#27c93f"/>
+  
+  <text x="70" y="120" fill="#008844" font-family="Courier New, monospace" font-size="18">
+    <tspan>user@dev:~$ cat welcome.txt</tspan>
+  </text>
+  
+  <text x="70" y="160" fill="#c44569" font-family="Courier New, monospace" font-size="16">
+    <tspan>Welcome to my GitHub profile!</tspan>
+  </text>
+  
+  <g transform="translate(640, 300)">
+    <text x="0" y="0" text-anchor="middle" font-family="cursive, Brush Script MT" font-size="72" fill="url(#nameGradientLight)" filter="url(#glowLight)">
+      <tspan>Malaraju Yaswanth Varma</tspan>
+    </text>
+  </g>
+  
+  <text x="640" y="380" text-anchor="middle" font-family="Courier New, monospace" font-size="24" fill="#008844">
+    <tspan>Data Analyst</tspan>
+  </text>
+  
+  <rect x="920" y="365" width="12" height="28" fill="#008844">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <g transform="translate(640, 430)">
+    <rect x="-280" y="-30" width="560" height="60" fill="#f8f9fa" stroke="#c44569" stroke-width="2" rx="10"/>
+    <text x="0" y="10" text-anchor="middle" font-family="Courier New, monospace" font-size="20" fill="#2d3436">
+      <tspan>"Zero dependencies.</tspan>
+      <tspan x="0" y="35">Zero regrets"</tspan>
+    </text>
+  </g>
+  
+  <g transform="translate(640, 520)">
+    <text x="0" y="0" text-anchor="middle" font-family="Courier New, monospace" font-size="32" fill="#c44569" filter="url(#glowLight)">
+      <tspan>KEEP CODING</tspan>
+    </text>
+    <text x="0" y="40" text-anchor="middle" font-family="Courier New, monospace" font-size="32" fill="#008844" filter="url(#glowLight)">
+      <tspan>KEEP GROWING</tspan>
+    </text>
+  </g>
+</svg>
