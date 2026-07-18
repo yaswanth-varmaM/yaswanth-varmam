@@ -11,7 +11,7 @@
 </h3>
 
 <!-- 🌈 Animated Banner with Dark/Light Mode -->
-<picture align="center">
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="./banner.svg?v=1">
   <source media="(prefers-color-scheme: light)" srcset="./banner-light.svg?v=1">
   <img alt="Animated Banner" src="./banner.svg?v=1" width="100%">
