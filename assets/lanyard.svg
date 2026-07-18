@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <linearGradient id="strapGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF69B4;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FF1493;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="metalGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C0C0C0;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#808080;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#C0C0C0;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="glassGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(30,30,46,0.95);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgba(20,20,30,0.98);stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="hologramShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0)"/>
+      <stop offset="50%" style="stop-color:rgba(255,255,255,0.4)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0)"/>
+    </linearGradient>
+    
+    <filter id="glowRing">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <clipPath id="avatarClip">
+      <circle cx="100" cy="180" r="60"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Group with pendulum animation -->
+  <g transform-origin="200 0">
+    <!-- Drop-in animation -->
+    <animateTransform attributeName="transform" type="translate" values="0,-800; 0,0" dur="1.5s" begin="0s" fill="freeze"/>
+    
+    <!-- Initial swing (damped) -->
+    <animateTransform attributeName="transform" type="rotate" values="-30 200 0; 20 200 0; -15 200 0; 10 200 0; -5 200 0; 0 200 0" dur="3s" begin="1.5s" fill="freeze"/>
+    
+    <!-- Continuous gentle sway -->
+    <animateTransform attributeName="transform" type="rotate" values="-3 200 0; 3 200 0; -3 200 0" dur="4s" repeatCount="indefinite" begin="4.5s"/>
+    
+    <!-- Pink Strap with printed text -->
+    <rect x="170" y="0" width="60" height="120" fill="url(#strapGradient)" rx="5"/>
+    <text x="200" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="10" font-weight="bold" transform="rotate(-90 200 40)">
+      yaswanth-varmaM
+    </text>
+    <text x="200" y="55" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="8" transform="rotate(-90 200 55)">
+      Data Analyst
+    </text>
+    
+    <!-- Metal Clasp -->
+    <rect x="185" y="115" width="30" height="20" fill="url(#metalGradient)" rx="2"/>
+    <rect x="190" y="118" width="20" height="3" fill="#606060"/>
+    <rect x="190" y="123" width="20" height="3" fill="#606060"/>
+    <rect x="190" y="128" width="20" height="3" fill="#606060"/>
+    
+    <!-- Metal Ring -->
+    <circle cx="200" cy="145" r="8" fill="none" stroke="url(#metalGradient)" stroke-width="3"/>
+    
+    <!-- ID Card (Dark Glass) -->
+    <g transform="translate(100, 160)">
+      <rect x="0" y="0" width="200" height="320" rx="15" fill="url(#glassGradient)" stroke="rgba(255,255,255,0.2)" stroke-width="2" filter="url(#glowRing)"/>
+      
+      <!-- Holographic Shine Sweep -->
+      <rect x="0" y="0" width="200" height="320" rx="15" fill="url(#hologramShine)" opacity="0">
+        <animate attributeName="opacity" values="0;0.6;0" dur="3s" repeatCount="indefinite" begin="5s"/>
+        <animateTransform attributeName="transform" type="translate" values="-200,-200; 400,400" dur="3s" repeatCount="indefinite" begin="5s"/>
+      </rect>
+      
+      <!-- Avatar Ring (Glowing) -->
+      <circle cx="100" cy="100" r="65" fill="none" stroke="#FF69B4" stroke-width="3" filter="url(#glowRing)">
+        <animate attributeName="stroke" values="#FF69B4;#FF1493;#9400D3;#FF69B4" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      
+      <!-- Avatar Placeholder (Replace with base64 image) -->
+      <circle cx="100" cy="100" r="60" fill="#4A4A6A" clip-path="url(#avatarClip)"/>
+      <!-- When you have your base64 image, replace the circle above with: -->
+      <!-- <image x="40" y="40" width="120" height="120" href="data:image/png;base64,YOUR_BASE64_HERE" clip-path="url(#avatarClip)"/> -->
+      
+      <!-- Name -->
+      <text x="100" y="190" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="18" font-weight="bold">
+        Malaraju Yaswanth
+      </text>
+      <text x="100" y="210" text-anchor="middle" fill="#FF69B4" font-family="Arial" font-size="14">Varma</text>
+      
+      <!-- Role -->
+      <text x="100" y="240" text-anchor="middle" fill="#00CED1" font-family="Arial" font-size="12">Data Analyst</text>
+      
+      <!-- Handle -->
+      <text x="100" y="260" text-anchor="middle" fill="#AAAAAA" font-family="monospace" font-size="11">@yaswanth-varmaM</text>
+      
+      <!-- Barcode -->
+      <g transform="translate(50, 280)" fill="#FFFFFF">
+        <rect x="0" y="0" width="3" height="25"/>
+        <rect x="5" y="0" width="1" height="25"/>
+        <rect x="8" y="0" width="4" height="25"/>
+        <rect x="14" y="0" width="2" height="25"/>
+        <rect x="18" y="0" width="1" height="25"/>
+        <rect x="21" y="0" width="5" height="25"/>
+        <rect x="28" y="0" width="2" height="25"/>
+        <rect x="32" y="0" width="3" height="25"/>
+        <rect x="37" y="0" width="1" height="25"/>
+        <rect x="40" y="0" width="4" height="25"/>
+        <rect x="46" y="0" width="2" height="25"/>
+        <rect x="50" y="0" width="3" height="25"/>
+        <rect x="55" y="0" width="1" height="25"/>
+        <rect x="58" y="0" width="4" height="25"/>
+        <rect x="64" y="0" width="2" height="25"/>
+        <rect x="68" y="0" width="3" height="25"/>
+        <rect x="73" y="0" width="1" height="25"/>
+        <rect x="76" y="0" width="5" height="25"/>
+        <rect x="83" y="0" width="2" height="25"/>
+        <rect x="87" y="0" width="3" height="25"/>
+        <rect x="92" y="0" width="1" height="25"/>
+        <rect x="95" y="0" width="4" height="25"/>
+        <rect x="101" y="0" width="2" height="25"/>
+      </g>
+      
+      <!-- QR Code Placeholder -->
+      <rect x="140" y="275" width="40" height="40" fill="#FFFFFF" opacity="0.9"/>
+      <rect x="145" y="280" width="10" height="10" fill="#000000"/>
+      <rect x="165" y="280" width="10" height="10" fill="#000000"/>
+      <rect x="145" y="300" width="10" height="10" fill="#000000"/>
+      <rect x="165" y="300" width="10" height="10" fill="#000000"/>
+    </g>
+  </g>
+</svg>
