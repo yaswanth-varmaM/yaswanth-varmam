@@ -61,7 +61,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/snake.svg?v=1">
     <source media="(prefers-color-scheme: light)" srcset="./assets/snake.svg?v=1">
-    <img src="./assets/snake.svg?v=1" alt="GitHub Contribution Snake">
+    <img src="./workflows/github-snake.yml?v=1" alt="GitHub Contribution Snake">
   </picture>
 </p>
 
