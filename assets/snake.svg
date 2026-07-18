@@ -1,0 +1,40 @@
+name: Generate Snake Animation
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs daily at midnight UTC
+  workflow_dispatch:     # Allows manual triggering
+
+jobs:
+  generate:
+    permissions:
+      contents: write    # CRITICAL: Allows the action to push the file back to your repo
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate Snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/snake.svg
+          # Custom colors matching your professional palette
+          color_snake: "#4361EE"
+          color_dots: "#4361EE,#3A0CA3,#F8F9FA"
+          color_grid: "#1E2130"
+          color_bg: "#12141D"
+          color_empty: "#1E2130"
+
+      - name: Push changes to repository
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/snake.svg
+          git commit -m " Update contribution snake [skip ci]" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
