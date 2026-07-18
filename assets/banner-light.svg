@@ -176,9 +176,4 @@
       <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
     </circle>
   </g>
-
-  <!-- Professional Scanner Line -->
-  <rect x="0" y="0" width="1280" height="2" fill="#4361EE" opacity="0.2" filter="url(#softGlow)">
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,740" dur="4s" repeatCount="indefinite"/>
-  </rect>
 </svg>
