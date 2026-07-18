@@ -1,0 +1,388 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 740">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:1">
+        <animate attributeName="stop-color" values="#8B0000;#4B0082;#8B0000" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#4B0082;stop-opacity:1">
+        <animate attributeName="stop-color" values="#4B0082;#8B0000;#4B0082" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <linearGradient id="nameGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF69B4;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#FF1493;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#9400D3;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="hologramGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(0,255,255,0)"/>
+      <stop offset="50%" style="stop-color:rgba(0,255,255,0.3)"/>
+      <stop offset="100%" style="stop-color:rgba(0,255,255,0)"/>
+    </linearGradient>
+    
+    <!-- Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Neon Flicker Filter -->
+    <filter id="neonFlicker">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Clip Path for Rounded Corners -->
+    <clipPath id="roundedCorners">
+      <rect x="0" y="0" width="1280" height="740" rx="20" ry="20"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1280" height="740" fill="url(#mainGradient)" clip-path="url(#roundedCorners)"/>
+  
+  <!-- Ambient Pulsing Orbs -->
+  <circle cx="200" cy="150" r="100" fill="rgba(255,105,180,0.1)" filter="url(#glow)">
+    <animate attributeName="r" values="100;120;100" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1000" cy="500" r="80" fill="rgba(148,0,211,0.15)" filter="url(#glow)">
+    <animate attributeName="r" values="80;100;80" dur="5s" repeatCount="indefinite" begin="1s"/>
+    <animate attributeName="opacity" values="0.15;0.25;0.15" dur="5s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  <circle cx="800" cy="200" r="60" fill="rgba(255,20,147,0.1)" filter="url(#glow)">
+    <animate attributeName="r" values="60;80;60" dur="6s" repeatCount="indefinite" begin="2s"/>
+  </circle>
+  
+  <!-- Twinkling Sparkles -->
+  <g fill="#FFFFFF" filter="url(#glow)">
+    <circle cx="150" cy="100" r="2">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1100" cy="150" r="1.5">
+      <animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <circle cx="950" cy="600" r="2">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <circle cx="300" cy="650" r="1.5">
+      <animate attributeName="opacity" values="0;1;0" dur="2.2s" repeatCount="indefinite" begin="0.3s"/>
+    </circle>
+    <circle cx="600" cy="100" r="2">
+      <animate attributeName="opacity" values="0;1;0" dur="2.8s" repeatCount="indefinite" begin="0.7s"/>
+    </circle>
+  </g>
+  
+  <!-- Rising Particles -->
+  <g fill="rgba(255,105,180,0.6)">
+    <circle cx="200" cy="740" r="3">
+      <animate attributeName="cy" values="740;0" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="740" r="2">
+      <animate attributeName="cy" values="740;0" dur="10s" repeatCount="indefinite" begin="2s"/>
+      <animate attributeName="opacity" values="0;1;0" dur="10s" repeatCount="indefinite" begin="2s"/>
+    </circle>
+    <circle cx="900" cy="740" r="2.5">
+      <animate attributeName="cy" values="740;0" dur="9s" repeatCount="indefinite" begin="4s"/>
+      <animate attributeName="opacity" values="0;1;0" dur="9s" repeatCount="indefinite" begin="4s"/>
+    </circle>
+    <circle cx="1100" cy="740" r="3">
+      <animate attributeName="cy" values="740;0" dur="11s" repeatCount="indefinite" begin="1s"/>
+      <animate attributeName="opacity" values="0;1;0" dur="11s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+  </g>
+  
+  <!-- Floating Hearts -->
+  <g fill="#FF1493" opacity="0.6">
+    <path d="M 100 400 Q 110 390 120 400 Q 130 410 120 420 Q 110 430 100 420 Q 90 410 100 400">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-20; 0,0" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 1150 300 Q 1160 290 1170 300 Q 1180 310 1170 320 Q 1160 330 1150 320 Q 1140 310 1150 300">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-15; 0,0" dur="4s" repeatCount="indefinite" begin="1s"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="4s" repeatCount="indefinite" begin="1s"/>
+    </path>
+    <path d="M 600 550 Q 610 540 620 550 Q 630 560 620 570 Q 610 580 600 570 Q 590 560 600 550">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-25; 0,0" dur="3.5s" repeatCount="indefinite" begin="0.5s"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="3.5s" repeatCount="indefinite" begin="0.5s"/>
+    </path>
+  </g>
+  
+  <!-- Terminal Background -->
+  <rect x="50" y="50" width="500" height="80" rx="10" fill="rgba(0,0,0,0.6)" filter="url(#glow)"/>
+  
+  <!-- Terminal Text with Typing Animation -->
+  <text x="70" y="90" fill="#00FF00" font-family="monospace" font-size="18" opacity="0">
+    user@dev:~$ cat
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.5s" fill="freeze"/>
+  </text>
+  <text x="70" y="120" fill="#FFFFFF" font-family="monospace" font-size="16">
+    <tspan id="typingText" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1s" fill="freeze"/>
+      <animate id="typingAnimation" attributeName="stroke-dashoffset" from="1000" to="0" dur="3s" begin="1.3s" fill="freeze"/>
+    </tspan>
+  </text>
+  
+  <!-- Blinking Cursor -->
+  <rect x="180" y="100" width="10" height="20" fill="#00FF00">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" begin="1s"/>
+  </rect>
+  
+  <!-- Name with Pop-in Animation -->
+  <g transform="translate(640, 280)">
+    <!-- Script Font Outlines for "Malaraju Yaswanth Varma" -->
+    <text x="0" y="0" text-anchor="middle" fill="url(#nameGradient)" font-family="cursive" font-size="72" font-weight="bold" filter="url(#glow)">
+      <tspan x="0" dy="0" opacity="0">
+        M
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2s" fill="freeze"/>
+        <animate attributeName="transform" values="scale(0);scale(1)" dur="0.5s" begin="2s" fill="freeze"/>
+      </tspan>
+      <tspan x="45" dy="0" opacity="0">
+        a
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.1s" fill="freeze"/>
+        <animate attributeName="transform" values="scale(0);scale(1)" dur="0.5s" begin="2.1s" fill="freeze"/>
+      </tspan>
+      <tspan x="85" dy="0" opacity="0">
+        l
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.2s" fill="freeze"/>
+      </tspan>
+      <tspan x="100" dy="0" opacity="0">
+        a
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.3s" fill="freeze"/>
+      </tspan>
+      <tspan x="140" dy="0" opacity="0">
+        r
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.4s" fill="freeze"/>
+      </tspan>
+      <tspan x="175" dy="0" opacity="0">
+        a
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.5s" fill="freeze"/>
+      </tspan>
+      <tspan x="215" dy="0" opacity="0">
+        j
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.6s" fill="freeze"/>
+      </tspan>
+      <tspan x="240" dy="0" opacity="0">
+        u
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.7s" fill="freeze"/>
+      </tspan>
+      <tspan x="285" dy="0" opacity="0">
+        
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.8s" fill="freeze"/>
+      </tspan>
+      <tspan x="310" dy="0" opacity="0">
+        Y
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3s" fill="freeze"/>
+      </tspan>
+      <tspan x="355" dy="0" opacity="0">
+        a
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.1s" fill="freeze"/>
+      </tspan>
+      <tspan x="395" dy="0" opacity="0">
+        s
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.2s" fill="freeze"/>
+      </tspan>
+      <tspan x="430" dy="0" opacity="0">
+        w
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.3s" fill="freeze"/>
+      </tspan>
+      <tspan x="485" dy="0" opacity="0">
+        a
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.4s" fill="freeze"/>
+      </tspan>
+      <tspan x="525" dy="0" opacity="0">
+        n
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.5s" fill="freeze"/>
+      </tspan>
+      <tspan x="570" dy="0" opacity="0">
+        t
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.6s" fill="freeze"/>
+      </tspan>
+      <tspan x="595" dy="0" opacity="0">
+        h
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.7s" fill="freeze"/>
+      </tspan>
+      <tspan x="640" dy="0" opacity="0">
+        
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.8s" fill="freeze"/>
+      </tspan>
+      <tspan x="665" dy="0" opacity="0">
+        V
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4s" fill="freeze"/>
+      </tspan>
+      <tspan x="715" dy="0" opacity="0">
+        a
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.1s" fill="freeze"/>
+      </tspan>
+      <tspan x="755" dy="0" opacity="0">
+        r
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.2s" fill="freeze"/>
+      </tspan>
+      <tspan x="785" dy="0" opacity="0">
+        m
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.3s" fill="freeze"/>
+      </tspan>
+      <tspan x="845" dy="0" opacity="0">
+        a
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.4s" fill="freeze"/>
+      </tspan>
+    </text>
+  </g>
+  
+  <!-- Cycling Role Titles -->
+  <text x="640" y="340" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="28" opacity="0">
+    <tspan id="role1" dy="0" opacity="0">
+      Data Analyst
+      <animate attributeName="opacity" values="0;1;1;0" dur="8s" begin="5s" repeatCount="indefinite"/>
+    </tspan>
+    <tspan id="role2" dy="0" opacity="0">
+      Python Developer
+      <animate attributeName="opacity" values="0;1;1;0" dur="8s" begin="7s" repeatCount="indefinite"/>
+    </tspan>
+    <tspan id="role3" dy="0" opacity="0">
+      BI Enthusiast
+      <animate attributeName="opacity" values="0;1;1;0" dur="8s" begin="9s" repeatCount="indefinite"/>
+    </tspan>
+  </text>
+  
+  <!-- Quote Box with Typed Effect -->
+  <rect x="440" y="370" width="400" height="60" rx="10" fill="rgba(0,0,0,0.5)" stroke="#FF69B4" stroke-width="2" opacity="0" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="12s" fill="freeze"/>
+  </rect>
+  <text x="640" y="405" text-anchor="middle" fill="#FFD700" font-family="monospace" font-size="18" opacity="0">
+    "Zero dependencies. Zero regrets."
+    <animate attributeName="opacity" values="0;1" dur="2s" begin="12.5s" fill="freeze"/>
+  </text>
+  
+  <!-- Tech Stack Pills -->
+  <g transform="translate(340, 470)">
+    <rect x="0" y="0" width="100" height="35" rx="17.5" fill="#3776AB" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="15s" fill="freeze"/>
+    </rect>
+    <text x="50" y="23" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="14" font-weight="bold" opacity="0">
+      Python
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="15s" fill="freeze"/>
+    </text>
+    
+    <rect x="120" y="0" width="70" height="35" rx="17.5" fill="#00758F" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="15.2s" fill="freeze"/>
+    </rect>
+    <text x="155" y="23" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="14" font-weight="bold" opacity="0">
+      SQL
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="15.2s" fill="freeze"/>
+    </text>
+    
+    <rect x="210" y="0" width="80" height="35" rx="17.5" fill="#217346" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="15.4s" fill="freeze"/>
+    </rect>
+    <text x="250" y="23" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="14" font-weight="bold" opacity="0">
+      Excel
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="15.4s" fill="freeze"/>
+    </text>
+    
+    <rect x="310" y="0" width="100" height="35" rx="17.5" fill="#F2C811" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="15.6s" fill="freeze"/>
+    </rect>
+    <text x="360" y="23" text-anchor="middle" fill="#000000" font-family="Arial" font-size="14" font-weight="bold" opacity="0">
+      Power BI
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="15.6s" fill="freeze"/>
+    </text>
+    
+    <rect x="430" y="0" width="90" height="35" rx="17.5" fill="#E97627" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="15.8s" fill="freeze"/>
+    </rect>
+    <text x="475" y="23" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="14" font-weight="bold" opacity="0">
+      Tableau
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="15.8s" fill="freeze"/>
+    </text>
+    
+    <rect x="540" y="0" width="70" height="35" rx="17.5" fill="#E34F26" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="16s" fill="freeze"/>
+    </rect>
+    <text x="575" y="23" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="14" font-weight="bold" opacity="0">
+      HTML
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="16s" fill="freeze"/>
+    </text>
+    
+    <rect x="630" y="0" width="60" height="35" rx="17.5" fill="#1572B6" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="16.2s" fill="freeze"/>
+    </rect>
+    <text x="660" y="23" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="14" font-weight="bold" opacity="0">
+      CSS
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="16.2s" fill="freeze"/>
+    </text>
+    
+    <rect x="710" y="0" width="110" height="35" rx="17.5" fill="#F7DF1E" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="16.4s" fill="freeze"/>
+    </rect>
+    <text x="765" y="23" text-anchor="middle" fill="#000000" font-family="Arial" font-size="14" font-weight="bold" opacity="0">
+      JavaScript
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="16.4s" fill="freeze"/>
+    </text>
+  </g>
+  
+  <!-- Code Editor Card -->
+  <rect x="50" y="530" width="400" height="180" rx="10" fill="rgba(30,30,46,0.9)" stroke="#FF69B4" stroke-width="2" filter="url(#glow)"/>
+  <rect x="50" y="530" width="400" height="30" rx="10" fill="rgba(40,40,56,0.95)"/>
+  <circle cx="70" cy="545" r="6" fill="#FF5F56"/>
+  <circle cx="90" cy="545" r="6" fill="#FFBD2E"/>
+  <circle cx="110" cy="545" r="6" fill="#27C93F"/>
+  <text x="80" y="550" fill="#FFFFFF" font-family="monospace" font-size="12">buildDreams.jsx</text>
+  
+  <text x="70" y="580" fill="#FF69B4" font-family="monospace" font-size="14" opacity="0">
+    const buildDreams = () =&gt; {
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="17s" fill="freeze"/>
+  </text>
+  <text x="70" y="600" fill="#00CED1" font-family="monospace" font-size="14" opacity="0">
+    &nbsp;&nbsp;const data = analyze();
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="17.5s" fill="freeze"/>
+  </text>
+  <text x="70" y="620" fill="#00CED1" font-family="monospace" font-size="14" opacity="0">
+    &nbsp;&nbsp;const insights = visualize(data);
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="18s" fill="freeze"/>
+  </text>
+  <text x="70" y="640" fill="#00CED1" font-family="monospace" font-size="14" opacity="0">
+    &nbsp;&nbsp;return transformToMagic(insights);
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="18.5s" fill="freeze"/>
+  </text>
+  <text x="70" y="660" fill="#FF69B4" font-family="monospace" font-size="14" opacity="0">
+    };
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="19s" fill="freeze"/>
+  </text>
+  
+  <!-- Neon Sign -->
+  <g transform="translate(700, 580)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="20s" fill="freeze"/>
+    <rect x="0" y="0" width="350" height="80" rx="10" fill="rgba(0,0,0,0.6)" stroke="#FF1493" stroke-width="3" filter="url(#neonFlicker)"/>
+    <text x="175" y="35" text-anchor="middle" fill="#FF1493" font-family="Arial" font-size="24" font-weight="bold" filter="url(#neonFlicker)">
+      KEEP CODING
+      <animate attributeName="opacity" values="1;0.8;1;0.9;1" dur="2s" repeatCount="indefinite" begin="20s"/>
+    </text>
+    <text x="175" y="65" text-anchor="middle" fill="#9400D3" font-family="Arial" font-size="24" font-weight="bold" filter="url(#neonFlicker)">
+      KEEP GROWING
+      <animate attributeName="opacity" values="1;0.9;1;0.8;1" dur="2.5s" repeatCount="indefinite" begin="20s"/>
+    </text>
+  </g>
+  
+  <!-- Hologram Scan Line (One-time formation) -->
+  <rect x="0" y="0" width="1280" height="5" fill="url(#hologramGradient)" filter="url(#glow)" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,740" dur="2s" begin="0s" fill="freeze"/>
+  </rect>
+  
+  <!-- Continuous Horizontal Scanner -->
+  <g clip-path="url(#roundedCorners)">
+    <rect x="0" y="0" width="1280" height="3" fill="rgba(0,255,255,0.6)" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,740" dur="3.5s" repeatCount="indefinite" begin="3s"/>
+    </rect>
+  </g>
+</svg>
