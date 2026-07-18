@@ -38,15 +38,9 @@
 
 <p align="center">
   <img src="./assets/stats.svg?v=1" width="48%" alt="GitHub Stats">
-  <img src="./assets/langs.svg?v=1" width="48%" alt="Top Languages">
 </p>
 
 <br>
-
-<p align="center">
-  <img src="./assets/trophies.svg?v=1" width="95%" alt="GitHub Trophies">
-</p>
-
 ---
 
 #  Featured Projects
