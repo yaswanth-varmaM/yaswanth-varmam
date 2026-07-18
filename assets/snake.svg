@@ -1,35 +1,17 @@
-name: Generate Snake Animation
-
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-
-jobs:
-  generate:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Generate Snake
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          # Colors are passed correctly here for v3
-          outputs: |
-            assets/snake.svg?color_snake=#4361EE&color_grid=#1E2130&color_bg=#12141D&color_dot=#3A0CA3
-
-      - name: Push changes to repository
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/snake.svg
-          git commit -m " Update contribution snake [skip ci]" || echo "No changes to commit"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="100%">
+  <defs>
+    <linearGradient id="snakeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4361EE;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#3A0CA3;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="200" fill="#12141D" rx="12"/>
+  
+  <!-- Contribution Grid (Subtle) -->
+  <g fill="#1E2130">
+    <!-- Row 1 -->
+    <rect x="20" y="30" width="12" height="12" rx="2"/><rect x="36" y="30" width="12" height="12" rx="2"/><rect x="52" y="30" width="12" height="12" rx="2"/><rect x="68" y="30" width="12" height="12" rx="2"/><rect x="84" y="30" width="12" height="12" rx="2"/><rect x="100" y="30" width="12" height="12" rx="2"/><rect x="116" y="30" width="12" height="12" rx="2"/><rect x="132" y="30" width="12" height="12" rx="2"/><rect x="148" y="30" width="12" height="12" rx="2"/><rect x="164" y="30" width="12" height="12" rx="2"/><rect x="180" y="30" width="12" height="12" rx="2"/><rect x="196" y="30" width="12" height="12" rx="2"/><rect x="212" y="30" width="12" height="12" rx="2"/><rect x="228" y="30" width="12" height="12" rx="2"/><rect x="244" y="30" width="12" height="12" rx="2"/><rect x="260" y="30" width="12" height="12" rx="2"/><rect x="276" y="30" width="12" height="12" rx="2"/><rect x="292" y="30" width="12" height="12" rx="2"/><rect x="308" y="30" width="12" height="12" rx="2"/><rect x="324" y="30" width="12" height="12" rx="2"/><rect x="340" y="30" width="12" height="12" rx="2"/><rect x="356" y="30" width="12" height="12" rx="2"/><rect x="372" y="30" width="12" height="12" rx="2"/><rect x="388" y="30" width="12" height="12" rx="2"/><rect x="404" y="30" width="12" height="12" rx="2"/><rect x="420" y="30" width="12" height="12" rx="2"/><rect x="436" y="30" width="12" height="12" rx="2"/><rect x="452" y="30" width="12" height="12" rx="2"/><rect x="468" y="30" width="12" height="12" rx="2"/><rect x="484" y="30" width="12" height="12" rx="2"/><rect x="500" y="30" width="12" height="12" rx="2"/><rect x="516" y="30" width="12" height="12" rx="2"/><rect x="532" y="30" width="12" height="12" rx="2"/><rect x="548" y="30" width="12" height="12" rx="2"/><rect x="564" y="30" width="12" height="12" rx="2"/>
+    <!-- Row 2 -->
+    <rect x="20" y="46" width="12" height="12" rx="2"/><rect x="36" y="46" width="12" height="12" rx="2"/><rect x="52" y="46" width="12" height="12" rx="2"/><rect x="68" y="46" width="12" height="12" rx="2"/><rect x="84" y="46" width="12" height="12" rx="2"/><rect x="100" y="46" width="12" height="12" rx="2"/><rect x="116" y="46" width="12" height="12" rx="2"/><rect x="132" y="46" width="12" height="12" rx="2"/><rect x="148" y="46" width="12" height="12" rx="2"/><rect x="164" y="46" width="12" height="12" rx="2"/><rect x="180" y="46" width="12" height="12" rx="2"/><rect x="196" y="46" width="12" height="12" rx="2"/><rect x="212" y="46" width="12" height="12" rx="2"/><rect x="228" y="46" width="12" height="12" rx="2"/><rect x="244" y="46" width="12" height="12" rx="2"/><rect x="260" y="46" width="12" height="12" rx="2"/><rect x="276" y="46" width="12" height="12" rx="2"/><rect x="292" y="46" width="12" height="12" rx="2"/><rect x="308" y="46" width="12" height="12" rx="2"/><rect x="324" y="46" width="12" height="12" rx="2"/><rect x="340" y="46" width="12" height="12" rx="2"/><rect x="356" y="46" width="12" height="12" rx="2"/><rect x="372" y="46" width="12" height="12" rx="2
