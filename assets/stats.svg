@@ -1,23 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200">
   <defs>
-    <linearGradient id="rankGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1"/>
+    <!-- Professional Palette -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4361EE;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#3A0CA3;stop-opacity:1"/>
     </linearGradient>
-    <linearGradient id="repoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1"/>
-    </linearGradient>
-    <linearGradient id="followerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1abc9c;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#16a085;stop-opacity:1"/>
-    </linearGradient>
-    <linearGradient id="contribGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1"/>
-    </linearGradient>
-    <filter id="cardGlow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+    
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -25,83 +15,84 @@
     </filter>
   </defs>
   
-  <rect width="400" height="220" rx="12" fill="#1a1a2e" filter="url(#cardGlow)"/>
-  <text x="200" y="35" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="18" font-weight="bold">GitHub Profile Statistics</text>
+  <!-- Clean Background -->
+  <rect width="420" height="200" rx="16" fill="#12141D"/>
   
-  <!-- Rank Ring (S+) -->
-  <g transform="translate(70, 110)">
-    <circle cx="0" cy="0" r="50" fill="none" stroke="#2d2d44" stroke-width="8"/>
-    <circle cx="0" cy="0" r="50" fill="none" stroke="url(#rankGradient)" stroke-width="8" stroke-dasharray="314" stroke-dashoffset="314">
-      <animate attributeName="stroke-dashoffset" from="314" to="0" dur="2s" begin="0.5s" fill="freeze"/>
+  <!-- Subtle Top Accent Line -->
+  <rect x="0" y="0" width="420" height="3" rx="1.5" fill="url(#accentGradient)"/>
+  
+  <!-- Title -->
+  <text x="210" y="35" text-anchor="middle" fill="#F8F9FA" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" letter-spacing="1" opacity="0">
+    PROFILE STATISTICS
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.2s" fill="freeze"/>
+  </text>
+  
+  <!-- LEFT SIDE: Rank Ring -->
+  <g transform="translate(80, 110)">
+    <!-- Background Ring -->
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#1E2130" stroke-width="6"/>
+    
+    <!-- Animated Progress Ring -->
+    <circle cx="0" cy="0" r="45" fill="none" stroke="url(#accentGradient)" stroke-width="6" stroke-linecap="round" stroke-dasharray="283" stroke-dashoffset="283" transform="rotate(-90)">
+      <animate attributeName="stroke-dashoffset" from="283" to="0" dur="1.5s" begin="0.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
     </circle>
-    <text x="0" y="-5" text-anchor="middle" fill="#FFD700" font-family="Arial" font-size="32" font-weight="bold" opacity="0">
+    
+    <!-- Rank Text -->
+    <text x="0" y="10" text-anchor="middle" fill="#4361EE" font-family="system-ui, sans-serif" font-size="28" font-weight="800" opacity="0">
       S+
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.5s" fill="freeze"/>
     </text>
-    <text x="0" y="20" text-anchor="middle" fill="#B0B0B0" font-family="Arial" font-size="10">Rank</text>
-  </g>
-  
-  <!-- Repositories -->
-  <g transform="translate(200, 80)">
-    <rect x="-40" y="-30" width="80" height="60" rx="8" fill="#2d2d44" opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.3s" fill="freeze"/>
-      <animateTransform attributeName="transform" type="translate" values="0,-20; 0,0" dur="0.5s" begin="0.3s" fill="freeze"/>
-    </rect>
-    <text x="0" y="-5" text-anchor="middle" fill="#3498db" font-family="Arial" font-size="28" font-weight="bold" opacity="0">
-      15
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.8s" fill="freeze"/>
-    </text>
-    <text x="0" y="15" text-anchor="middle" fill="#B0B0B0" font-family="Arial" font-size="10" opacity="0">
-      Repositories
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1s" fill="freeze"/>
+    <text x="0" y="30" text-anchor="middle" fill="#F8F9FA" font-family="system-ui, sans-serif" font-size="11" font-weight="500" opacity="0.5">
+      Rank
+      <animate attributeName="opacity" values="0;0.5" dur="0.5s" begin="1.7s" fill="freeze"/>
     </text>
   </g>
   
-  <!-- Followers -->
-  <g transform="translate(330, 80)">
-    <rect x="-40" y="-30" width="80" height="60" rx="8" fill="#2d2d44" opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.2s" fill="freeze"/>
-      <animateTransform attributeName="transform" type="translate" values="0,-20; 0,0" dur="0.5s" begin="1.2s" fill="freeze"/>
-    </rect>
-    <text x="0" y="-5" text-anchor="middle" fill="#1abc9c" font-family="Arial" font-size="28" font-weight="bold" opacity="0">
-      250
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.7s" fill="freeze"/>
-    </text>
-    <text x="0" y="15" text-anchor="middle" fill="#B0B0B0" font-family="Arial" font-size="10" opacity="0">
-      Followers
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.9s" fill="freeze"/>
-    </text>
+  <!-- RIGHT SIDE: 2x2 Grid -->
+  
+  <!-- 1. Repositories (Top Left) -->
+  <g transform="translate(180, 75)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.6s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" values="180,85; 180,75" dur="0.5s" begin="0.6s" fill="freeze"/>
+    
+    <!-- Accent Dot -->
+    <circle cx="0" cy="5" r="4" fill="#4361EE"/>
+    
+    <!-- Value -->
+    <text x="15" y="10" fill="#F8F9FA" font-family="system-ui, sans-serif" font-size="26" font-weight="700">15</text>
+    
+    <!-- Label -->
+    <text x="15" y="28" fill="#F8F9FA" font-family="system-ui, sans-serif" font-size="11" font-weight="500" opacity="0.5">Repositories</text>
   </g>
   
-  <!-- Following -->
-  <g transform="translate(135, 170)">
-    <rect x="-35" y="-25" width="70" height="50" rx="8" fill="#2d2d44" opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.2s" fill="freeze"/>
-      <animateTransform attributeName="transform" type="translate" values="0,-20; 0,0" dur="0.5s" begin="2.2s" fill="freeze"/>
-    </rect>
-    <text x="0" y="-5" text-anchor="middle" fill="#9b59b6" font-family="Arial" font-size="24" font-weight="bold" opacity="0">
-      50
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.7s" fill="freeze"/>
-    </text>
-    <text x="0" y="15" text-anchor="middle" fill="#B0B0B0" font-family="Arial" font-size="10" opacity="0">
-      Following
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.9s" fill="freeze"/>
-    </text>
+  <!-- 2. Followers (Top Right) -->
+  <g transform="translate(310, 75)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.8s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" values="310,85; 310,75" dur="0.5s" begin="0.8s" fill="freeze"/>
+    
+    <circle cx="0" cy="5" r="4" fill="#4361EE"/>
+    <text x="15" y="10" fill="#F8F9FA" font-family="system-ui, sans-serif" font-size="26" font-weight="700">250</text>
+    <text x="15" y="28" fill="#F8F9FA" font-family="system-ui, sans-serif" font-size="11" font-weight="500" opacity="0.5">Followers</text>
   </g>
   
-  <!-- Contributions -->
-  <g transform="translate(265, 170)">
-    <rect x="-35" y="-25" width="70" height="50" rx="8" fill="#2d2d44" opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.2s" fill="freeze"/>
-      <animateTransform attributeName="transform" type="translate" values="0,-20; 0,0" dur="0.5s" begin="3.2s" fill="freeze"/>
-    </rect>
-    <text x="0" y="-5" text-anchor="middle" fill="#e74c3c" font-family="Arial" font-size="24" font-weight="bold" opacity="0">
-      1.2k
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.7s" fill="freeze"/>
-    </text>
-    <text x="0" y="15" text-anchor="middle" fill="#B0B0B0" font-family="Arial" font-size="10" opacity="0">
-      Contributions
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.9s" fill="freeze"/>
-    </text>
+  <!-- 3. Following (Bottom Left) -->
+  <g transform="translate(180, 135)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.0s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" values="180,145; 180,135" dur="0.5s" begin="1.0s" fill="freeze"/>
+    
+    <circle cx="0" cy="5" r="4" fill="#4361EE"/>
+    <text x="15" y="10" fill="#F8F9FA" font-family="system-ui, sans-serif" font-size="26" font-weight="700">50</text>
+    <text x="15" y="28" fill="#F8F9FA" font-family="system-ui, sans-serif" font-size="11" font-weight="500" opacity="0.5">Following</text>
   </g>
+  
+  <!-- 4. Contributions (Bottom Right) -->
+  <g transform="translate(310, 135)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.2s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" values="310,145; 310,135" dur="0.5s" begin="1.2s" fill="freeze"/>
+    
+    <circle cx="0" cy="5" r="4" fill="#4361EE"/>
+    <text x="15" y="10" fill="#F8F9FA" font-family="system-ui, sans-serif" font-size="26" font-weight="700">1.2k</text>
+    <text x="15" y="28" fill="#F8F9FA" font-family="system-ui, sans-serif" font-size="11" font-weight="500" opacity="0.5">Contributions</text>
+  </g>
+  
 </svg>
