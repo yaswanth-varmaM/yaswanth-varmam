@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 740" width="1280" height="740">
+  <defs>
+    <!-- Gradient for name -->
+    <linearGradient id="nameGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:1">
+        <animate attributeName="stop-color" values="#ff6b9d;#c44569;#ff6b9d" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#f8b500;stop-opacity:1">
+        <animate attributeName="stop-color" values="#f8b500;#ffa726;#f8b500" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#a18cd1;stop-opacity:1">
+        <animate attributeName="stop-color" values="#a18cd1;#9c27b0;#a18cd1" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <!-- Pink to Purple Gradient -->
+    <linearGradient id="pinkPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#9c27b0;stop-opacity:1"/>
+    </linearGradient>
+    
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#4a1a6e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2d1b4e;stop-opacity:1"/>
+    </linearGradient>
+    
+    <!-- Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Neon Flicker Filter -->
+    <filter id="neonFlicker">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Clip Path for Rounded Corners -->
+    <clipPath id="roundedCorners">
+      <rect x="0" y="0" width="1280" height="740" rx="20" ry="20"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1280" height="740" fill="url(#bgGradient)"/>
+  
+  <!-- Animated Terminal Background -->
+  <rect x="50" y="50" width="1180" height="640" fill="#0d0d1a" rx="10" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.85;0.8" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Terminal Header -->
+  <rect x="50" y="50" width="1180" height="40" fill="#1a1a2e" rx="10" ry="10"/>
+  <circle cx="75" cy="70" r="6" fill="#ff5f56">
+    <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="95" cy="70" r="6" fill="#ffbd2e">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="115" cy="70" r="6" fill="#27c93f">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Terminal Text with Typing Animation -->
+  <text x="70" y="120" fill="#00ff88" font-family="Courier New, monospace" font-size="18" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze"/>
+    <tspan>user@dev:~$ cat welcome.txt</tspan>
+  </text>
+  
+  <text x="70" y="160" fill="#ff6b9d" font-family="Courier New, monospace" font-size="16" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1s" fill="freeze"/>
+    <tspan>Welcome to my GitHub profile!</tspan>
+  </text>
+  
+  <!-- Name with Vector Outlines and Gradient -->
+  <g transform="translate(640, 300)">
+    <text x="0" y="0" text-anchor="middle" font-family="cursive, Brush Script MT" font-size="72" fill="url(#nameGradient)" filter="url(#glow)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="1s" begin="1.5s" fill="freeze"/>
+      <tspan x="0" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2s" fill="freeze"/>M</tspan>
+      <tspan x="45" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.2s" fill="freeze"/>a</tspan>
+      <tspan x="85" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.4s" fill="freeze"/>l</tspan>
+      <tspan x="105" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.6s" fill="freeze"/>a</tspan>
+      <tspan x="145" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.8s" fill="freeze"/>r</tspan>
+      <tspan x="180" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3s" fill="freeze"/>a</tspan>
+      <tspan x="220" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.2s" fill="freeze"/>j</tspan>
+      <tspan x="245" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.4s" fill="freeze"/>u</tspan>
+      <tspan x="290" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.6s" fill="freeze"/> </tspan>
+      <tspan x="310" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.8s" fill="freeze"/>Y</tspan>
+      <tspan x="355" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4s" fill="freeze"/>a</tspan>
+      <tspan x="395" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.2s" fill="freeze"/>s</tspan>
+      <tspan x="430" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.4s" fill="freeze"/>w</tspan>
+      <tspan x="480" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.6s" fill="freeze"/>a</tspan>
+      <tspan x="520" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.8s" fill="freeze"/>n</tspan>
+      <tspan x="565" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="5s" fill="freeze"/>t</tspan>
+      <tspan x="590" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="5.2s" fill="freeze"/>h</tspan>
+      <tspan x="635" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="5.4s" fill="freeze"/> </tspan>
+      <tspan x="655" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="5.6s" fill="freeze"/>V</tspan>
+      <tspan x="695" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="5.8s" fill="freeze"/>a</tspan>
+      <tspan x="735" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="6s" fill="freeze"/>r</tspan>
+      <tspan x="765" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="6.2s" fill="freeze"/>m</tspan>
+      <tspan x="820" y="0" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="6.4s" fill="freeze"/>a</tspan>
+    </text>
+  </g>
+  
+  <!-- Cycling Role Titles -->
+  <text x="640" y="380" text-anchor="middle" font-family="Courier New, monospace" font-size="24" fill="#00ff88" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="7s" fill="freeze"/>
+    <animate attributeName="fill" values="#00ff88;#ff6b9d;#a18cd1;#00ff88" dur="6s" repeatCount="indefinite"/>
+    <tspan>Data Analyst</tspan>
+    <animate attributeName="opacity" values="1;0" dur="0.5s" begin="9s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="9.5s" fill="freeze"/>
+    <tspan>Python Developer</tspan>
+    <animate attributeName="opacity" values="1;0" dur="0.5s" begin="11.5s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="12s" fill="freeze"/>
+    <tspan>SQL Expert</tspan>
+    <animate attributeName="opacity" values="1;0" dur="0.5s" begin="14s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="14.5s" fill="freeze"/>
+    <tspan>BI Specialist</tspan>
+    <animate attributeName="opacity" values="1;0" dur="0.5s" begin="16.5s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="17s" fill="freeze"/>
+    <animate repeatCount="indefinite" dur="8s" attributeName="opacity" values="1;1;0" keyTimes="0;0.8;1"/>
+  </text>
+  
+  <!-- Blinking Cursor -->
+  <rect x="920" y="365" width="12" height="28" fill="#00ff88" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="1s" begin="7s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Tagline Box -->
+  <g transform="translate(640, 430)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="8s" fill="freeze"/>
+    <rect x="-280" y="-30" width="560" height="60" fill="#2d1b4e" stroke="#ff6b9d" stroke-width="2" rx="10"/>
+    <text x="0" y="10" text-anchor="middle" font-family="Courier New, monospace" font-size="20" fill="#ffffff">
+      <tspan>"Zero dependencies.</tspan>
+      <tspan x="0" y="35">Zero regrets"</tspan>
+    </text>
+  </g>
+  
+  <!-- Floating Hearts -->
+  <g>
+    <text x="100" y="200" font-size="24" opacity="0" filter="url(#glow)">
+      <animate attributeName="opacity" values="0;0.8;0" dur="3s" begin="10s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="200;150" dur="3s" begin="10s" repeatCount="indefinite"/>❤</text>
+    <text x="1180" y="250" font-size="20" opacity="0" filter="url(#glow)">
+      <animate attributeName="opacity" values="0;0.8;0" dur="4s" begin="11s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="250;200" dur="4s" begin="11s" repeatCount="indefinite"/></text>
+    <text x="150" y="500" font-size="28" opacity="0" filter="url(#glow)">
+      <animate attributeName="opacity" values="0;0.8;0" dur="3.5s" begin="12s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="500;450" dur="3.5s" begin="12s" repeatCount="indefinite"/>💖</text>
+  </g>
+  
+  <!-- Twinkling Sparkles -->
+  <g>
+    <circle cx="200" cy="100" r="3" fill="#ffffff" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1100" cy="150" r="2" fill="#ff6b9d" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2.5s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="600" r="3" fill="#a18cd1" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="650" r="2" fill="#00ff88" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2.2s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Pulsing Ambient Orbs -->
+  <circle cx="100" cy="400" r="80" fill="#ff6b9d" opacity="0.1" filter="url(#glow)">
+    <animate attributeName="r" values="80;100;80" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1180" cy="500" r="100" fill="#9c27b0" opacity="0.1" filter="url(#glow)">
+    <animate attributeName="r" values="100;120;100" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.15;0.1" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Neon Sign -->
+  <g transform="translate(640, 520)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="10s" fill="freeze"/>
+    <text x="0" y="0" text-anchor="middle" font-family="Courier New, monospace" font-size="32" fill="#ff6b9d" filter="url(#neonFlicker)">
+      <tspan>KEEP CODING</tspan>
+      <animate attributeName="opacity" values="1;0.8;1;0.9;1" dur="2s" begin="10s" repeatCount="indefinite"/>
+    </text>
+    <text x="0" y="40" text-anchor="middle" font-family="Courier New, monospace" font-size="32" fill="#00ff88" filter="url(#neonFlicker)">
+      <tspan>KEEP GROWING</tspan>
+      <animate attributeName="opacity" values="0.8;1;0.9;1;0.8" dur="2s" begin="10.5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  
+  <!-- Rising Particles -->
+  <g>
+    <circle cx="300" cy="700" r="2" fill="#ff6b9d" opacity="0.6">
+      <animate attributeName="y" values="700;0" dur="8s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="8s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="720" r="3" fill="#a18cd1" opacity="0.5">
+      <animate attributeName="y" values="720;0" dur="10s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="10s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="710" r="2" fill="#00ff88" opacity="0.6">
+      <animate attributeName="y" values="710;0" dur="9s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="9s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
