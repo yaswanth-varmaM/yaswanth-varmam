@@ -58,7 +58,7 @@
 # 🐍 Contribution Snake
 
 <p align="center">
-  <img src="./assets/snake.svg?v=1" alt="Contribution Snake" width="100%">
+  <img src="https://raw.githubusercontent.com/yaswanth-varmaM/yaswanth-varmaM/main/assets/snake.svg" alt="Contribution Snake" width="100%">
 </p>
 ---
 
