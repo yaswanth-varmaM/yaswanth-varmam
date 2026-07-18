@@ -10,15 +10,6 @@
 
 <br>
 
-<div align="center">
-
-
-<img src="./assets/lanyard.svg?v=1" width="320" alt="ID Badge"/>
-
-</div>
-
----
-
 # 🚀 Tech Stack
 
 <p align="center">
