@@ -29,36 +29,40 @@
 
 <br/>
 
-
-<!-- Resume Download Button -->
-<a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID" target="_blank" rel="noopener noreferrer">
-   <img src="assets/resume-download.png" width="90" alt="Resume Download" />
+<!-- 🌟 PRIMARY ACTION BUTTONS (Side-by-Side) 🌟 -->
+<a href="https://YOUR_PORTFOLIO_WEBSITE_URL.com" target="_blank" title="Visit My Portfolio">
+  <img src="assets/my-portfolio.png" height="50" alt="Visit Portfolio" />
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID" target="_blank" rel="noopener noreferrer" title="Download Resume">
+   <img src="assets/resume-download.png" height="50" alt="Resume Download" />
+</a>
+
+<br/><br/>
+
+<!-- 🤝 SECONDARY ACTION ICONS (Socials) 🤝 -->
 <a href="mailto:yaswanthvarmamalaraju@gmail.com" target="_blank" title="Email Me">
-  <img src="https://cdn.simpleicons.org/gmail/EA4335" width="45" height="45" alt="Gmail"/>
+  <img src="https://cdn.simpleicons.org/gmail/EA4335" width="42" height="42" alt="Gmail"/>
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/yaswanth-varma/" target="_blank">
- <img src="assets/LinkedIn.webp" width="50" alt="LinkedIn" />
+<a href="https://www.linkedin.com/in/yaswanth-varma/" target="_blank" title="Connect on LinkedIn">
+ <img src="assets/LinkedIn.webp" width="46" height="46" alt="LinkedIn" />
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/yaswanth-varmaM" target="_blank">
-  <img src="https://skillicons.dev/icons?i=github&theme=dark" width="45" height="45" alt="GitHub"/>
+<a href="https://github.com/yaswanth-varmaM" target="_blank" title="View GitHub">
+  <img src="https://skillicons.dev/icons?i=github&theme=dark" width="42" height="42" alt="GitHub"/>
 </a>
-&nbsp;&nbsp;
-<a href="https://www.kaggle.com/YOUR_KAGGLE_USERNAME" target="_blank">
-  <img src="https://cdn.simpleicons.org/kaggle/20BEFF" width="45" height="45" alt="Kaggle"/>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.kaggle.com/YOUR_KAGGLE_USERNAME" target="_blank" title="Kaggle">
+  <img src="https://cdn.simpleicons.org/kaggle/20BEFF" width="42" height="42" alt="Kaggle"/>
 </a>
-&nbsp;&nbsp;
-<a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/" target="_blank">
-  <img src="https://cdn.simpleicons.org/instagram/E4405F" width="45" height="45" alt="Instagram"/>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/" target="_blank" title="Instagram">
+  <img src="https://cdn.simpleicons.org/instagram/E4405F" width="42" height="42" alt="Instagram"/>
 </a>
-</div>
-</div>
 
+</div>
 <br/>
-
 
 <!-- ═══════════════ 📌 NAVIGATION BAR ═══════════════ -->
 
