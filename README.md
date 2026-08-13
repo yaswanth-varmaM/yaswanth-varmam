@@ -28,7 +28,7 @@
 
 <!-- Resume Download Button -->
 <a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID" target="_blank" rel="noopener noreferrer">
-   <img src="assets/resume-download.png" width="50" alt="Resume Download" />
+   <img src="assets/resume-download.png" width="90" alt="Resume Download" />
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="mailto:yaswanthvarmamalaraju@gmail.com" target="_blank" title="Email Me">
@@ -60,7 +60,7 @@
 
 <div align="center">
 
-| [👤 About](#-about-me) | [🛠️ Skills](#️-skills) | [💼 Projects](#-projects) | [📊 Stats](#-github-stats) | [📬 Contact](#-contact) |
+| [👤 About](#-about-me) | [🛠️ Skills](#️-skills) | [💼 Projects](#-projects) | [📬 Contact](#-contact) |
 |:---:|:---:|:---:|:---:|:---:|
 
 </div>
@@ -162,11 +162,12 @@ My journey in data started with curiosity — *"What can these numbers actually 
 
 <div align="center">
 
-### 💬 Let's Build Something Amazing Together!
+### 📖 Every dataset has a story waiting to be told.
 
-I'm always open to discussing **data projects**, **BI dashboards**, **collaboration**, or just talking about **Python + SQL**.
+Whether you need to uncover hidden trends, automate the mundane, or build a dashboard that drives real decisions—**let's write that story together.**
 
 <br/>
+
 
 <!-- Minimalist Raw Colored Logos -->
 <a href="mailto:yaswanthvarmamalaraju@gmail.com" target="_blank">
@@ -197,7 +198,7 @@ I'm always open to discussing **data projects**, **BI dashboards**, **collaborat
 <br/>
 <br/>
 
-<b>⭐ Thanks for visiting my profile! 🇮🇳 ⭐</b>
+<b>⭐ Thanks for visiting my profile!⭐</b>
 
 </div>
 
