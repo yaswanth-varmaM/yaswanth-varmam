@@ -4,7 +4,7 @@
 <!-- ============================================ -->
 
 <!-- ═══════════════ 🏠 HERO SECTION ═══════════════ -->
-
+<br/>
 <div align="center">
 
 <!-- Profile Photo -->
@@ -28,21 +28,28 @@
 
 <!-- Resume Download Button -->
 <a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Download_Resume-FF9933?style=for-the-badge&logo=googledrive&logoColor=white" alt="Download Resume"/>
+   <img src="assets/resume-download.png" width="50" alt="Resume Download" />
 </a>
-
-<a href="mailto:yaswanthvarmamalaraju@gmail.com">
-  <img src="https://img.shields.io/badge/Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Me"/>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="mailto:yaswanthvarmamalaraju@gmail.com" target="_blank" title="Email Me">
+  <img src="https://cdn.simpleicons.org/gmail/EA4335" width="45" height="45" alt="Gmail"/>
 </a>
-
+&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/yaswanth-varma/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+ <img src="assets/LinkedIn.webp" width="50" alt="LinkedIn" />
 </a>
-
+&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/yaswanth-varmaM" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  <img src="https://skillicons.dev/icons?i=github&theme=dark" width="45" height="45" alt="GitHub"/>
 </a>
-
+&nbsp;&nbsp;
+<a href="https://www.kaggle.com/YOUR_KAGGLE_USERNAME" target="_blank">
+  <img src="https://cdn.simpleicons.org/kaggle/20BEFF" width="45" height="45" alt="Kaggle"/>
+</a>
+&nbsp;&nbsp;
+<a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/" target="_blank">
+  <img src="https://cdn.simpleicons.org/instagram/E4405F" width="45" height="45" alt="Instagram"/>
+</a>
 </div>
 </div>
 
@@ -149,29 +156,6 @@ My journey in data started with curiosity — *"What can these numbers actually 
 
 ---
 
-<!-- ═══════════════ 📊 GITHUB STATS ═══════════════ -->
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=yaswanth-varmaM&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF9C&icon_color=F7DF1E&text_color=FFFFFF"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yaswanth-varmaM&layout=compact&langs_count=8&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF9C&text_color=FFFFFF"/>
-
-<br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com?user=yaswanth-varmaM&theme=radical&hide_border=true&background=0D1117&ring=00FF9C&fire=F7DF1E&currStreakLabel=00FF9C" alt="GitHub Streak"/>
-
-<br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=yaswanth-varmaM&theme=radical&no-frame=true&no-bg=true&margin-w=4&row=1&column=7" alt="Trophies"/>
-
-</div>
-
-<br/>
-
----
-
 <!-- ═══════════════ 📬 CONTACT ═══════════════ -->
 
 ## 📬 Contact
@@ -194,7 +178,7 @@ I'm always open to discussing **data projects**, **BI dashboards**, **collaborat
 </a>
 &nbsp;&nbsp;
 <a href="https://github.com/yaswanth-varmaM" target="_blank">
-  <img src="https://cdn.simpleicons.org/github/8b949e" width="45" height="45" alt="GitHub"/>
+  <img src="https://skillicons.dev/icons?i=github&theme=dark" width="45" height="45" alt="GitHub"/>
 </a>
 &nbsp;&nbsp;
 <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/" target="_blank">
