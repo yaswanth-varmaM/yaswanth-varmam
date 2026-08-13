@@ -107,7 +107,7 @@ My journey in data started with curiosity — *"What can these numbers actually 
 
 ### 📊 BI & Visualization
 <!-- Using SimpleIcons for raw, clean logos that match the style above -->
-<img src="./assets/icons/powerbi.svg" width="50" alt="Power BI" />
+<img src="assets/excel-file.png" width="50" alt="Power BI" />
 <img src="./assets/icons/tableau.svg" width="50" alt="Tableau" />
 <img src="./assets/icons/excel.svg" width="50" alt="Excel" />
 <br/>
