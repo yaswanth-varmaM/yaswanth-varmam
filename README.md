@@ -65,7 +65,6 @@
 <div align="center">
 
 | [👤 About](#-about-me) | [🛠️ Skills](#️-skills) | [💼 Projects](#-projects) | [📬 Contact](#-contact) |
-|:---:|:---:|:---:|:---:|:---:|
 
 </div>
 
