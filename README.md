@@ -184,24 +184,25 @@ I'm always open to discussing **data projects**, **BI dashboards**, **collaborat
 
 <br/>
 
-<a href="mailto:yaswanthvarmamalaraju@gmail.com">
-  <img src="https://img.shields.io/badge/Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Me"/>
+<!-- Minimalist Raw Colored Logos -->
+<a href="mailto:yaswanthvarmamalaraju@gmail.com" target="_blank">
+  <img src="https://cdn.simpleicons.org/gmail/EA4335" width="45" height="45" alt="Gmail"/>
 </a>
-
+&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/yaswanth-varma/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+ <img src="assets/icons/vscode.svg" width="50" alt="LinkedIn" />
 </a>
-
+&nbsp;&nbsp;
 <a href="https://github.com/yaswanth-varmaM" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  <img src="https://cdn.simpleicons.org/github/8b949e" width="45" height="45" alt="GitHub"/>
 </a>
-
+&nbsp;&nbsp;
 <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/" target="_blank">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
+  <img src="https://cdn.simpleicons.org/instagram/E4405F" width="45" height="45" alt="Instagram"/>
 </a>
-
+&nbsp;&nbsp;
 <a href="https://www.kaggle.com/YOUR_KAGGLE_USERNAME" target="_blank">
-  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/>
+  <img src="https://cdn.simpleicons.org/kaggle/20BEFF" width="45" height="45" alt="Kaggle"/>
 </a>
 
 <br/>
