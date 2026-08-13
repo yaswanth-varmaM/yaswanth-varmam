@@ -1,6 +1,6 @@
 <!-- ============================================ -->
 <!--    MALARAJU YASWANTH VARMA - PORTFOLIO      -->
-<!--    Built with ❤️ as a Portfolio Web Page     -->
+<!--    Built and Crafted with ❤️ as a Portfolio Web Page     -->
 <!-- ============================================ -->
 
 <!-- ═══════════════ 🏠 HERO SECTION ═══════════════ -->
@@ -189,6 +189,14 @@ I'm always open to discussing **data projects**, **BI dashboards**, **collaborat
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 </a>
 
+<a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/" target="_blank">
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
+</a>
+
+<a href="https://www.kaggle.com/YOUR_KAGGLE_USERNAME" target="_blank">
+  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/>
+</a>
+
 <br/>
 <br/>
 
@@ -197,13 +205,13 @@ I'm always open to discussing **data projects**, **BI dashboards**, **collaborat
 <br/>
 <br/>
 
-<b>⭐ Thanks for visiting my profile! ⭐</b>
+<b>⭐ Thanks for visiting my profile! 🇮🇳 ⭐</b>
 
 </div>
 
 <br/>
 
-<!-- Footer wave without text, so no white-on-white problem -->
+<!-- Indian Flag Color Footer Flow -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" alt="Footer Wave"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF9933,50:FFFFFF,100:138808&height=120&section=footer" alt="Indian Flag Footer"/>
 </p>
