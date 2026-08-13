@@ -2,6 +2,10 @@
 <!--    MALARAJU YASWANTH VARMA - PORTFOLIO      -->
 <!--    Built and Crafted with ❤️ as a Portfolio Web Page     -->
 <!-- ============================================ -->
+<!-- ═══════════════ 🇮🇳 HEADER BANNER ═══════════════ -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF9933,50:FFFFFF,100:138808&height=160&section=header" alt="Header"/>
+</p>
 
 <!-- ═══════════════ 🏠 HERO SECTION ═══════════════ -->
 <br/>
