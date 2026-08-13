@@ -31,7 +31,7 @@
 
 <!-- 🌟 PRIMARY ACTION BUTTONS (Side-by-Side) 🌟 -->
 <a href="https://YOUR_PORTFOLIO_WEBSITE_URL.com" target="_blank" title="Visit My Portfolio">
-  <img src="assets/my-portfolio.png" height="70" alt="Visit Portfolio" />
+  <img src="assets/my-portfolio.png" height="55" alt="Visit Portfolio" />
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID" target="_blank" rel="noopener noreferrer" title="Download Resume">
