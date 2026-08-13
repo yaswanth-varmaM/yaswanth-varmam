@@ -173,33 +173,37 @@ My journey in data started with curiosity — *"What can these numbers actually 
 
 ### 💬 Let's Build Something Amazing Together!
 
-I'm always open to discussing **data projects**, **collaboration opportunities**, or just geeking out about **dashboards and Python**.
+I'm always open to discussing **data projects**, **BI dashboards**, **collaboration**, or just talking about **Python + SQL**.
 
 <br/>
 
 <a href="mailto:yaswanthvarmamalaraju@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
+  <img src="https://img.shields.io/badge/Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Me"/>
 </a>
-<a href="https://www.linkedin.com/in/yaswanth-varma/">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+
+<a href="https://www.linkedin.com/in/yaswanth-varma/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
 </a>
-<a href="https://github.com/yaswanth-varmaM">
-  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+
+<a href="https://github.com/yaswanth-varmaM" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 </a>
 
 <br/>
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=yaswanth-varmaM&label=👀+Profile+Views&color=blueviolet&style=flat-square" alt="Profile Views"/>
+<img src="https://komarev.com/ghpvc/?username=yaswanth-varmaM&label=Profile%20Views&color=blueviolet&style=flat-square" alt="Profile Views"/>
+
+<br/>
+<br/>
+
+<b>⭐ Thanks for visiting my profile! ⭐</b>
 
 </div>
 
 <br/>
 
-<!-- ═══════════════ FOOTER ═══════════════ -->
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&text=Thanks%20for%20visiting!%20⭐&fontSize=30&fontColor=fff&animation=twinkling&fontAlignY=30"/>
-
-</div>
+<!-- Footer wave without text, so no white-on-white problem -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" alt="Footer Wave"/>
+</p>
