@@ -190,7 +190,7 @@ I'm always open to discussing **data projects**, **BI dashboards**, **collaborat
 </a>
 &nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/yaswanth-varma/" target="_blank">
- <img src="assets/icons/vscode.svg" width="50" alt="LinkedIn" />
+ <img src="assets/LinkedIn.webp" width="50" alt="LinkedIn" />
 </a>
 &nbsp;&nbsp;
 <a href="https://github.com/yaswanth-varmaM" target="_blank">
