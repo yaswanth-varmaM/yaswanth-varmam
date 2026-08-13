@@ -25,20 +25,29 @@
 
 <br/>
 
-<!-- Quick Action Buttons -->
+
+<!-- Resume Download Button -->
+<a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Download_Resume-FF9933?style=for-the-badge&logo=googledrive&logoColor=white" alt="Download Resume"/>
+</a>
+
 <a href="mailto:yaswanthvarmamalaraju@gmail.com">
-  <img src="https://img.shields.io/badge/📧_Hire_Me-00FF9C?style=for-the-badge&logo=gmail&logoColor=black" alt="Hire Me"/>
+  <img src="https://img.shields.io/badge/Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Me"/>
 </a>
-<a href="https://www.linkedin.com/in/yaswanth-varma/">
-  <img src="https://img.shields.io/badge/💼_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+
+<a href="https://www.linkedin.com/in/yaswanth-varma/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
 </a>
-<a href="https://github.com/yaswanth-varmaM?tab=repositories">
-  <img src="https://img.shields.io/badge/📂_View_Projects-181717?style=for-the-badge&logo=github&logoColor=white" alt="Projects"/>
+
+<a href="https://github.com/yaswanth-varmaM" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 </a>
 
 </div>
+</div>
 
 <br/>
+
 
 <!-- ═══════════════ 📌 NAVIGATION BAR ═══════════════ -->
 
@@ -80,35 +89,33 @@ My journey in data started with curiosity — *"What can these numbers actually 
 <br/>
 
 ---
-
 <!-- ═══════════════ 🛠️ SKILLS ═══════════════ -->
 
 ## 🛠️ Skills
 
 <div align="center">
 
-### 📊 Data & Analytics
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL"/>
-<img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="Excel"/>
-
-### 📈 Visualization & BI
-<img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI"/>
-<img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau"/>
-
-### 🌐 Web Development
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML"/>
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS"/>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
-
-### 🧰 Tools & Platforms
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-<img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code"/>
-
-</div>
+### 🐍 Languages & Databases
+<img src="https://skillicons.dev/icons?i=py,postgres,mysql&theme=dark" alt="Languages"/>
 
 <br/>
+
+### 🌐 Web Development
+<img src="https://skillicons.dev/icons?i=html,css,js&theme=dark" alt="Web"/>
+
+<br/>
+
+### 📊 BI & Visualization
+<!-- Using SimpleIcons for raw, clean logos that match the style above -->
+<img src="./assets/icons/powerbi.svg" width="50" alt="Power BI" />
+<img src="./assets/icons/tableau.svg" width="50" alt="Tableau" />
+<img src="./assets/icons/excel.svg" width="50" alt="Excel" />
+<br/>
+
+### 🧰 Tools & Platforms
+<img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark" alt="Tools"/>
+
+</div>
 
 ---
 
