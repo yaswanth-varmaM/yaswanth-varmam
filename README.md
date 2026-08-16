@@ -2,14 +2,9 @@
 <!--    MALARAJU YASWANTH VARMA - PORTFOLIO      -->
 <!--    Built and Crafted with ❤️ as a Portfolio Web Page     -->
 <!-- ============================================ -->
-
-
 <!-- ═══════════════ 🏠 HERO SECTION ═══════════════ -->
-<br/>
 <div align="center">
-
 <br/>
-
 <!-- Name & Title -->
 <h1>Hi, I'm <span style="color: #00FF9C;">Yaswanth Varma</span> 👋</h1>
 <h3>Data Analyst | BI Developer | Python Enthusiast</h3>
